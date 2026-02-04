@@ -62,7 +62,7 @@ export function update(req: Request, res: Response) {
 
   if (status && !isValidStatus(status)) {
     return res.status(400).json({
-      message: "Invalid status. Must be one of: open, in-progress, resolved"
+      message: "Invalid status. Must be one of the open, in-progress, resolved"
     });
   }
 
