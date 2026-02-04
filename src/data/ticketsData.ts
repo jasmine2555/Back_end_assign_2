@@ -4,7 +4,7 @@ export const tickets: Ticket[] = [
   {
     id: 1,
     title: "Update footer year",
-    description: "Footer still shows 2024",
+    description: "Footer is still showing 2024",
     priority: "low",
     status: "open",
     // 1 day old → LOW]
