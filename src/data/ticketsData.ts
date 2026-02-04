@@ -12,7 +12,7 @@ export const tickets: Ticket[] = [
   },
   {
     id: 2,
-    title: "Profile image not loading",
+    title: "Profile image is not loading",
     description: "User profile image missing",
     priority: "medium",
     status: "open",
