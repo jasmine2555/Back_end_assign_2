@@ -7,7 +7,7 @@ export const tickets: Ticket[] = [
     description: "Footer still shows 2024",
     priority: "low",
     status: "open",
-    // 1 day old → LOW
+    // 1 day old → LOW]
     createdAt: new Date(Date.now() - 1 * 24 * 60 * 60 * 1000).toISOString()
   },
   {
@@ -22,7 +22,7 @@ export const tickets: Ticket[] = [
   {
     id: 3,
     title: "Login issue",
-    description: "Users cannot login",
+    description: "Users can't login",
     priority: "high",
     status: "open",
     // 4 days old → HIGH
