@@ -56,7 +56,7 @@ export function update(req: Request, res: Response) {
 
   if (priority && !isValidPriority(priority)) {
     return res.status(400).json({
-      message: "Invalid priority. Must be one of: critical, high, medium, low"
+      message: "Invalid priority. Must be one of: critical, high, medium or low"
     });
   }
 
