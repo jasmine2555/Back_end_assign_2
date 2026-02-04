@@ -87,7 +87,7 @@ export function calculateUrgency(ticket: Ticket): TicketUrgency {
 
   if (urgencyScore >= 70) {
     urgencyLevel = "CRITICAL";
-    urgencyMessage = "Critical urgency! Fix immediately.";
+    urgencyMessage = "Critical urgency";
   } else if (urgencyScore >= 50) {
     urgencyLevel = "HIGH";
     urgencyMessage = "High urgency. Prioritize it.";
