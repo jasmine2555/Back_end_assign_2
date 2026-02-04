@@ -78,7 +78,7 @@ export function calculateUrgency(ticket: Ticket): TicketUrgency {
       ticketAgeDays,
       urgencyScore,
       urgencyLevel: "LOW",
-      urgencyMessage: "Ticket is resolved. No urgency."
+      urgencyMessage: "Ticket is resolved. There is No urgency."
     };
   }
 
