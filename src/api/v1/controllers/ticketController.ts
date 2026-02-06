@@ -38,9 +38,10 @@ export function create(req: Request, res: Response) {
   if (!title) return res.status(400).json({ message: "Missing required field: title" });
   if (!description) return res.status(400).json({ message: "Missing required field: description" });
   if (!isValidPriority(priority)) {
-    return res.status(400).json({
-      message: "Invalid priority. Must be one of the critical, high, medium, low"
-    });
+   return res.status(400).json({
+  message:"Invalid priority. Must be one of: critical, high, medium, low"
+});
+
   }
 
   const newTicket = createTicket(title, description, priority);
@@ -56,7 +57,7 @@ export function update(req: Request, res: Response) {
 
   if (priority && !isValidPriority(priority)) {
     return res.status(400).json({
-      message: "Invalid priority. It must be one of the critical, high, medium or low"
+      message: "Invalid priority. Must be one of: critical, high, medium, low"
     });
   }
 
